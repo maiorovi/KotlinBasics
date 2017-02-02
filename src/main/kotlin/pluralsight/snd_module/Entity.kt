@@ -14,5 +14,9 @@ class Entity(val name:String, val traitOne:String, val date: LocalDate) {
         }
     }
 
+    override fun toString():String {
+        return "name = $name, traitOne = $traitOne, date = $date"
+    }
+
 }
 
