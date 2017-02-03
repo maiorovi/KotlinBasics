@@ -29,9 +29,19 @@
             <version>1.1.0-beta2</version>
         </dependency>
         <dependency>
-            <groupId>org.jetbrains.kotlin</groupId>
-            <artifactId>kotlin-test</artifactId>
-            <version>1.1-M04</version>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>3.6.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.amshove.kluent</groupId>
+            <artifactId>kluent</artifactId>
+            <version>1.14</version>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-runner</artifactId>
+            <version>1.0.0-M3</version>
         </dependency>
 
 
@@ -148,5 +158,11 @@
             <name>kotlinDev</name>
             <url>https://dl.bintray.com/kotlin/kotlin-dev/</url>
         </repository>
+        <repository>
+            <id>bintray</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/markusamshove/maven</url>
+        </repository>
     </repositories>
+
 </project>
