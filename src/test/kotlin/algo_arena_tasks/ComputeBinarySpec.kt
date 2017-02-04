@@ -14,10 +14,19 @@ class ComputeBinarySpec :Spek({
 
         it("converts number in decimal format to binary format") {
             computeBinary(5) shouldEqual  "101"
+            computeBinary(255) shouldEqual "11111111"
         }
 
-        it("shouls represent decimal zero in binary format correctly") {
+        it("should represent decimal zero in binary format correctly") {
             computeBinary(0) shouldEqual "0"
+        }
+
+        it("should remove unnecessary zeroes on right side") {
+            computeBinary(1) shouldEqual  "1"
+        }
+
+        it ("should represent negative numbers correctly") {
+
         }
     }
 })

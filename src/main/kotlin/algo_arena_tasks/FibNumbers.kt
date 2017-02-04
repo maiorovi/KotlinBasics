@@ -5,11 +5,11 @@ fun fib(n: Int): Long {
     var current = 1
 
     if (n == 0) {
-        return prev.toLong()
+        return 0
     }
 
     if (n == 1) {
-        return prev.toLong()
+        return 1
     }
 
     for(i in 2..n) {
