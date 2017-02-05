@@ -26,7 +26,8 @@ class ComputeBinarySpec :Spek({
         }
 
         it ("should represent negative numbers correctly") {
-
+            computeBinary(-1) shouldEqual   ("11111111111111111111111111111111")
+            computeBinary(-256) shouldEqual ("11111111111111111111111100000000")
         }
     }
 })
