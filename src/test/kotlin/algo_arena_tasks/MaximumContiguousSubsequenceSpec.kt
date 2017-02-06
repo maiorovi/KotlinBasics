@@ -13,12 +13,16 @@ class MaximumContiguousSubsequenceSpec : Spek({
         it("find maximum subsequence in simple sequence") {
             maxContSequence(intArrayOf(-1,-2,3,4,5)) shouldBe 12
 
-            maxContSequence(intArrayOf(1,2,3,-10, 5)) shouldBe 5
+            maxContSequence(intArrayOf(1,2,3,-10, 5)) shouldBe 6
             maxContSequence(intArrayOf(-1,-2,-3,-4,-5)) shouldBe -1
         }
 
         it("test case 2") {
             maxContSequence(intArrayOf(1,2,3,-2,5)) shouldBe 9
+        }
+
+        it("test case 3") {
+            maxContSequence(intArrayOf(-2, -3, 4, -1, -2, 1, 5, -3)) shouldBe 7
         }
     }
 })
