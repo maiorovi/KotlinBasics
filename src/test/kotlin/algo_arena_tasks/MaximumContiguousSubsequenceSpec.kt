@@ -28,5 +28,9 @@ class MaximumContiguousSubsequenceSpec : Spek({
         it("test case 3") {
             maxContSequence(intArrayOf(-2, -3, 4, -1, -2, 1, 5, -3)) shouldEqual arrayOf(7, 2, 6)
         }
+
+        it("test cas 4") {
+//            maxContSequence(intArrayOf()) shouldEqual null
+        }
     }
 })
