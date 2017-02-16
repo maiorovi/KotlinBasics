@@ -20,7 +20,6 @@ fun countPath(down:Int, left: Int, width: Int, height: Int): Int {
     return countPath(down + 1, left, width, height) + countPath(down, left+1, width, height)
 }
 
-
 fun main(args:Array<String>) {
-    println(countPath(1000,1000))
+    println(countPath(100,100))
 }
