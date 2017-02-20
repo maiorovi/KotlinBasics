@@ -1,5 +1,6 @@
 package algo_arena_tasks
 
+import org.amshove.kluent.shouldBe
 import org.amshove.kluent.shouldEqual
 import org.jetbrains.spek.api.Spek
 import org.jetbrains.spek.api.dsl.describe
@@ -28,6 +29,10 @@ class IsomorphicStringTest : Spek({
 
         it("order tricks") {
             isIsomorphic("cssc", "dlld") shouldEqual true
+        }
+
+        it("value tricks") {
+            isIsomorphic("egg", "aaa") shouldBe false
         }
     }
 })

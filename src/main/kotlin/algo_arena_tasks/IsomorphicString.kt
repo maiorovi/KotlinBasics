@@ -10,6 +10,9 @@ fun isIsomorphic(input1: String, input2:String): Boolean {
     for (i in 0..input1.length - 1) {
         val ch = input1[i]
         if (!mappings.containsKey(ch)) {
+            if(mappings.containsValue(input2[i])) {
+                return false
+            }
             mappings.put(ch, input2[i])
         } else {
             if (mappings[ch] != input2[i]) {
