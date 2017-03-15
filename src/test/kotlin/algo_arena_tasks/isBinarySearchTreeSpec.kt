@@ -20,5 +20,16 @@ class isBinarySearchTreeSpec : Spek({
             val tree = TreeNode(10, TreeNode(-10, TreeNode(-20), TreeNode(0)), TreeNode(19, TreeNode(17), null))
             isBst(tree) shouldBe true
         }
+
+        it("test case 3") {
+            val tree = TreeNode(20, TreeNode(15, TreeNode(14), TreeNode(18)), TreeNode(30))
+            isBst(tree) shouldBe true
+        }
+
+        it("test case 4") {
+            val tree = TreeNode(16, TreeNode(15, TreeNode(14), TreeNode(18)), TreeNode(30))
+            isBst(tree) shouldBe false
+        }
+
     }
 })

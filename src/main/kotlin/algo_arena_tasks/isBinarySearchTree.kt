@@ -13,7 +13,7 @@ fun doJob(root:TreeNode?, minRange:Int, maxRange:Int):Boolean {
         return true
     }
 
-    if(root.data > maxRange || root.data < minRange) {
+    if(root.data >= maxRange || root.data <= minRange) {
         return false
     }
     return doJob(root.left, minRange, root.data) && doJob(root.right, root.data, maxRange)
