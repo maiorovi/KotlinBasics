@@ -43,6 +43,16 @@ public class KartsubaMultiplication {
 		return shorter;
 	}
 
+	public String addZeroes(String x, int y) {
+
+		while(y > 0) {
+			x = x + "0";
+			y = y / 10;
+		}
+
+		return x;
+	}
+
 	public String addTwoStrings(String x, String y) {
 		x = trimLeftZeroes(x);
 		y = trimLeftZeroes(y);
